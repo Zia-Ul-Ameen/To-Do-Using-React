@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #cebea4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todoContainer{
+  width: 90%;
+  height: 80%;
+  background-color: #0d0d0d;
+  border-radius: 20px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todoContainer::-webkit-scrollbar{
+  display: none;
+}
+.todoWrapper{
+  width: 30%;
+  height: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* completed */
+
+.completed{
+  width: 100%;
+  height: 20%;
+  border: 1px solid #cebea4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.completed p{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.completed div{
+  width: 70px;
+  height: 70px;
+  background-color: #ff5631;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(23, 23, 23);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* input area */
+
+.InputArea{
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.input{
+  width: 85%;
+  height: 100%;
+  background-color: #1e1e1e;
+  border-radius: 14px;
+  padding-left: 10px;
+  border: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.button{
+  background-color: #ff5631;
+  width:37px;
+  height: 37px;
+  border-radius: 50%;
+  border: none;
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  font-weight: 600;
+}
+.editButton{
+  background-color: rgb(117, 215, 84);
+  width:37px;
+  height: 37px;
+  border-radius: 50%;
+  border: none;
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* todolist */
+.marginTop{
+  /* margin-top: 30px; */
+}
+.newTodoWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 10%;
+  margin-top: 15px;
+  border-radius: 8px;
+  border:  1px solid #cebea4;
+}
+.wrapCheckInput{
+  display: flex;
+}
+.newTodoWrapper .checkBox{
+ margin-left: 10px;
+}
+.newTodoWrapper p{
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(229, 229, 229);
+  font-size:large;
+  font-weight: 600;
+}
+.lineThrough{
+  text-decoration: line-through;
+  text-decoration-color:#383838;
+  text-decoration-thickness: 2px;
+}
+.newTodoWrapper p::first-letter{
+  text-transform: uppercase;
+}
+.newTodoWrapper .editBtn{
+ margin-right: 15px;
+ background-color: #1e1e1e;
+ border: none;
+ color: rgb(117, 215, 84);
+}
+.newTodoWrapper .deleteBtn{
+ margin-right: 20px;
+ background-color: #1e1e1e;
+ border: none;
+ color: rgb(240, 49, 49);
+}
